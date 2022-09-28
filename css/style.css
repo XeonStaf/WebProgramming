@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --main-color: #922FDE;
+    --light-color: #B16FE3;
+    --very-light: rgba(195, 162, 219, 0.33);
+    --secondary-color: #460875;
+    --dark-color: #3E145E;
+}
+body {
+    background-color: var(--very-light);
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background-color: var(--secondary-color);
+    box-shadow: 5px 5px 20px var(--dark-color);
+}
+
+.navbar-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 25px;
+}
+
+
+#navbar-brand {
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    position: fixed;
+    top: 0;
+    margin: 25px;
+    text-decoration: none;
+    line-height: normal;
+}
+
+
+.navbar-nav li {
+    list-style-type: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-nav a:hover {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+
+#navbar-logo {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.part {
+    width: 50%;
+}
+
+.left-part {
+    float: left;
+}
+
+.right-part {
+    float: right;
+}
+
+.quote {
+    background-color: var(--very-light);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 20px var(--secondary-color);
+
+}
+
+.about {
+    padding: 20px;
+}
+
+.about h2 {
+    text-align: center;
+
+}
+
+.ad {
+    background-color: gold;
+    margin: 0;
+    padding: 10px;
+    height: 70px;
+    text-align: center;
+    font-weight: 700;
+}
+
+footer {
+    padding: 20px;
+    height: 75px;
+    background-color: var(--dark-color);
+    color: white;
+}
+
+footer svg {
+    fill: white;
+    width: 45px;
+    height: 45px;
+    float: right;
+    margin: 10px;
+    filter: drop-shadow(3px 3px 3px var(--light-color));
+}
+
+footer svg:hover {
+    transform: scale(1.2)
+
+}
+
+footer .copyright {
+    text-align: center;
+}
+
+.python {
+    background: #282a36;
+    font-size: 1em;
+    font-family: "Consolas","Monaco","Lucida Console","Lucida Sans Typewriter","Liberation Mono",monospace;
+    overflow-x: auto;
+    padding: 1em;
+    color: #b4b4b4;
+}
