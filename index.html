@@ -8,11 +8,11 @@
 </head>
 <body>
 <header>
-    <nav class="navbar">
+    <nav class="navbar flex">
         <img src="assets/img/logo.png" id="navbar-logo" alt="logo">
         <a id="navbar-brand" href="#">Визитка</a>
         <div>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav flex">
                 <li class="nav-item">
                     <a href="#">Home</a>
                 </li>
@@ -30,32 +30,68 @@
 
 <main>
  <div class="container">
-     <img class="part left-part" src="assets/img/my-photo.jpg" id="my-photo" alt="my photo">
-     <div class="part right-part">
-         <blockquote class="quote">
-             <p>Теория — это когда все известно, но ничего не работает.
-                 Практика — это когда все работает, но никто не знает почему.
-                 Мы же объединяем теорию и практику:
-                 ничего не работает... и никто не знает почему!</p>
+     <div class="flex slide">
+         <img class="my-photo big-screen" src="assets/img/my-photo.jpg" alt="my photo">
+         <div class="flex flex-row" style="align-items: center;">
+             <img class="my-photo small-screen" src="assets/img/my-photo.jpg" alt="my photo">
+             <blockquote class="quote">
+                 <p>Теория — это когда все известно, но ничего не работает.
+                     Практика — это когда все работает, но никто не знает почему.
+                     Мы же объединяем теорию и практику:
+                     ничего не работает... и никто не знает почему!</p>
 
-             <p>
-                 {x <sub>1</sub>, x <sub>2</sub>, ..., x <sub>n</sub>} <br>
-                 E = mc <sup>2</sup>
-             </p>
+                 <p>
+                     {x <sub>1</sub>, x <sub>2</sub>, ..., x <sub>n</sub>} <br>
+                     E = mc <sup>2</sup>
+                 </p>
 
-         </blockquote>
-         <div class="about">
-            <h2>Обо мне</h2>
-             <ul>
-                 <li>Студент итмо</li>
-                 <li>3 курс</li>
-             </ul>
+             </blockquote>
+             <div class="about">
+                <h2>Обо мне</h2>
+                 <ul>
+                     <li>Студент итмо</li>
+                     <li>3 курс</li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+
+     <div class="flex slide flex-row">
+         <div style="text-align: center;"><h2>Знание языков</h2></div>
+         <div class="table">
+                 <div class="table-head">
+                     <h3>Язык</h3>
+                     <h3>Уровень (★★★)</h3>
+                 </div>
+                 <div class="table-body">
+                     <div class="table-item">
+                         <p class="table-row">Java</p>
+                         <p>★★★</p>
+                     </div>
+                     <div class="table-item">
+                         <p class="table-row">C++ / C</p>
+                         <p>★★★</p>
+                     </div>
+                     <div class="table-item">
+                         <p class="table-row">Python</p>
+                         <p>★★</p>
+                     </div>
+                     <div class="table-item">
+                         <p class="table-row">C#</p>
+                         <p>★</p>
+                     </div>
+                     <div class="table-item">
+                         <p class="table-row">Еще что-то</p>
+                         <p>★★★</p>
+                     </div>
+                 </div>
          </div>
      </div>
  </div>
     <article class="ad">
         <p>Это будет рекламный баннер</p>
     </article>
+
 </main>
 
 
