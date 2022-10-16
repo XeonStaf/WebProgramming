@@ -1,0 +1,24 @@
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 2px solid rgba(143, 14, 192, 0.48);
+    border-radius: 0.25rem;
+    width: 18rem;
+    margin: 40px;
+}
+
+.card-img {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-content: center;
+}

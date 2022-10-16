@@ -20,10 +20,6 @@ body {
     margin: 1px;
 }
 
-.my-photo {
-    width: 50%;
-    height: 100%;
-}
 
 .navbar {
     position: fixed;
@@ -62,12 +58,26 @@ body {
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
+    background-image: linear-gradient(white, white);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
 }
 
 .navbar-nav a:hover {
-    color: var(--light-color);
     text-decoration: none;
+    background-size: 100% 2px;
+
 }
+
+.navbar-nav .active {
+    color: var(--light-color);
+    font-weight: bold;
+    background-size: 100% 2px;
+}
+
+
 
 
 #navbar-logo {
@@ -100,8 +110,10 @@ body {
     background-color: var(--very-light);
     color: var(--secondary-color);
     padding: 20px;
+    margin: 40px;
     text-align: center;
     box-shadow: 5px 5px 20px var(--secondary-color);
+
 
 }
 
@@ -126,7 +138,7 @@ body {
 
 footer {
     padding: 20px;
-    height: 75px;
+    height: 120px;
     background-color: var(--dark-color);
     color: white;
 }
@@ -150,17 +162,24 @@ footer .copyright {
 }
 
 .python {
-    background: #282a36;
+    background-color: #282a36;
     font-size: 1em;
     font-family: "Consolas","Monaco","Lucida Console","Lucida Sans Typewriter","Liberation Mono",monospace;
     overflow-x: auto;
-    padding: 1em;
+    margin-left: 0;
     color: #b4b4b4;
+    display: block;
+    white-space: pre-wrap;
+    width: 50vh;
 }
 
 
 .flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-row {
@@ -190,6 +209,18 @@ footer .copyright {
 
     .big-screen {
         display: none;
+    }
+
+    .side-part {
+        width: 100% !important;
+    }
+
+    .python {
+        width: 25vh !important;
+    }
+
+    footer {
+        height: auto !important;
     }
 }
 
@@ -233,4 +264,21 @@ footer .copyright {
 
 .table .table-item:nth-child(odd) {
     color: var(--light-color);
+}
+
+.side-part {
+    width: 50%;
+    height: 100%;
+}
+
+.photo-part {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.small-screen-photo {
+    width: 100%;
+    height: 40%;
 }
