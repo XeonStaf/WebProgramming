@@ -16,6 +16,15 @@ body {
     margin: 0;
 }
 
+.container {
+    margin: 1px;
+}
+
+.my-photo {
+    width: 50%;
+    height: 100%;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -38,8 +47,6 @@ body {
     color: white;
     font-size: 50px;
     font-style: italic;
-    position: fixed;
-    top: 0;
     margin: 25px;
     text-decoration: none;
     line-height: normal;
@@ -69,9 +76,11 @@ body {
     margin: 10px;
 }
 
+.nav-item {
+    margin: 10px;
+}
+
 .container {
-    width: 100vw;
-    height: 100vh;
     margin-top: 100px;
 }
 
@@ -98,6 +107,7 @@ body {
 
 .about {
     padding: 20px;
+    width: 100%;
 }
 
 .about h2 {
@@ -146,4 +156,81 @@ footer .copyright {
     overflow-x: auto;
     padding: 1em;
     color: #b4b4b4;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: column;
+}
+
+.center-elements {
+    justify-content: center;
+}
+
+.small-screen {
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    .small-screen {
+        display: block;
+    }
+
+    #navbar-brand {
+        font-size: 4vh;
+    }
+
+    .nav-item {
+        margin: 5px;
+    }
+
+    .big-screen {
+        display: none;
+    }
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 1px solid #3E145E;
+}
+
+.table {
+    width: 80%;
+    max-width: 80%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table .table-head {
+    border-bottom: 2px solid var(--light-color);
+    display: grid;
+    grid-template-columns: 2.5fr 2fr;
+}
+
+.table .table-item {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr;
+}
+
+.table .table-row, h3 {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.table h3 {
+    font-style: italic;
+}
+
+.table .table-item:nth-child(even) {
+    color: var(--dark-color);
+}
+
+.table .table-item:nth-child(odd) {
+    color: var(--light-color);
 }
