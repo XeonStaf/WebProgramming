@@ -1,6 +1,6 @@
 (function () {
     let items = JSON.parse(localStorage.getItem("tasks"))
-    if (items.size === 0) {
+    if (items == undefined) {
         const tasks =
             [
                 {
