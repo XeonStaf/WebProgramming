@@ -1,0 +1,29 @@
+
+.title {
+    padding-top: 1em;
+    text-align: center;
+}
+
+.task-item {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.task-item-done {
+    color: rgba(97, 255, 0, 0.73);
+    text-decoration-line: line-through;
+}
+
+.container {
+    margin-bottom: 3em;
+    margin-left: 10em;
+    margin-right: 10em;
+}

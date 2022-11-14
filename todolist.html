@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/favoriteCatsStyle.css">
+  <link rel="stylesheet" href="css/todolist.css">
   <script src="scripts/commonScripts.js"></script>
 
-  <title>Любимые котики</title>
+
+  <title>Список задач</title>
 </head>
 <body>
 <header>
@@ -34,50 +35,17 @@
 
 
 <main>
-  <div class="container" style="padding-top: 10px">
-    <div style="text-align: center;"><h1>Мой топ кошек</h1></div>
+  <div class="container">
+    <h1 class="title">Список задач</h1>
+    <form class="todo-form" id="add-task-form" onsubmit="addTask(); return false">
+      <input class="task-item" id="input-task-form" placeholder="Введите текст задачи">
+    </form>
+    <div id="task-list"></div>
 
-    <div class="flex flex-wrap">
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReTinc6ehDYJL0CxTmXC-m9KhZEAI1z0GzaMWKeogYYnbQ1QRaQzDfg9Mmecd0k242A40&usqp=CAU" class="card-img">
-        <div class="card-header">
-            <h2>Шотландская вислоухая кошка</h2>
-        </div>
-      </div>
 
-      <div class="card">
-        <img src="https://www.purina.ru/sites/default/files/2021-11/shutterstock_454778995-min.jpg" class="card-img">
-        <div class="card-header">
-          <h2>Персидская кошка</h2>
-        </div>
-      </div>
 
-      <div class="card">
-        <img src="https://www.purina.ru/sites/default/files/2021-11/shutterstock_1307361178-min.jpg" class="card-img">
-        <div class="card-header">
-          <h2>Рагамаффин</h2>
-        </div>
-      </div>
 
-      <div class="card">
-        <img src="https://www.purina.ru/sites/default/files/2021-11/shutterstock_682071139-min.jpg" class="card-img">
-        <div class="card-header">
-          <h2>Британская короткошерстная кошка</h2>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://www.purina.ru/sites/default/files/2021-11/shutterstock_1277915704-min.jpg" class="card-img">
-        <div class="card-header">
-          <h2>Мейн-кун</h2>
-        </div>
-      </div>
-
-    </div>
   </div>
-
-
-
 </main>
 
 
@@ -114,5 +82,5 @@
 </footer>
 </body>
 
-
+<script src="scripts/todolist-logic.js"></script>
 </html>
